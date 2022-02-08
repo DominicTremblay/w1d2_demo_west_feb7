@@ -3,7 +3,6 @@
 // taking the arguments from the command-line
 // clean up the args?
 const myArgs = process.argv.slice(2);
-console.log('myArgs: ', myArgs);
 // Edge case: We need at least 2 arguments.
 if (myArgs.length < 2) {
   console.log('Please enter at least 2 arguments');
@@ -34,7 +33,6 @@ const sum = function (numbers) {
     if (Number.isInteger(convertedNum)) {
       total += convertedNum; // total = total + num
     }
-    console.log('num:', convertedNum, 'type:', typeof num, 'total:', total);
   }
 
   // print out the sum
