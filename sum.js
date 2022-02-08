@@ -10,6 +10,9 @@ if (myArgs.length < 2) {
   process.exit();
 }
 
+// single responsibility principle:
+// a function should accomplish a single goal
+
 const sum = function (numbers) {
   let total = 0;
 
@@ -35,8 +38,15 @@ const sum = function (numbers) {
   }
 
   // print out the sum
-  console.log('Total:', total);
+  return total;
 };
 
 
-sum(myArgs);
+const result = sum(myArgs);
+console.log("result:", result);
+
+// refactor
+// readability
+// modular?
+// best practices
+
